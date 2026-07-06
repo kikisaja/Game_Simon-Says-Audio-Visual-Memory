@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says: Audio-Visual Memory 🧠🌈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <h1>🎨 SIMON SAYS</h1>
+            <p id="game-instruction">Klik tombol "Mulai" dan perhatikan urutan kedipan warna beserta nadanya!</p>
+        </header>
+
+        <!-- Informasi Level -->
+        <div class="status-board">
+            <div class="status-card">
+                <span class="label">Level Saat Ini</span>
+                <span class="value" id="current-level">0</span>
+            </div>
+        </div>
+
+        <!-- Grid Tombol Warna Gradien -->
+        <div class="simon-grid">
+            <div class="simon-btn btn-pink" data-index="0"></div>
+            <div class="simon-btn btn-blue" data-index="1"></div>
+            <div class="simon-btn btn-yellow" data-index="2"></div>
+            <div class="simon-btn btn-green" data-index="3"></div>
+        </div>
+
+        <!-- Tombol Aksi Utama -->
+        <div class="action-box">
+            <button id="btn-start" class="btn-action">Mulai Game 🚀</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
